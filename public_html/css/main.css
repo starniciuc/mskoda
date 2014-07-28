@@ -1,8 +1,6 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@import url("slider.css");
-
 body{
     font-family: "Skoda Pro",Verdana,"Arial CE",Arial,"Helvetica CE",sans-serif;
     color: #555;
@@ -15,6 +13,7 @@ header{
     width: 100%;
 	position: fixed;
 	top: 0;
+	background-color: #fff;
 }
 .wrapper .content{
 	margin-top: 120px;

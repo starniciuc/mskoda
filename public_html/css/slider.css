@@ -2,12 +2,13 @@
 	/* defaults for resposive height container */
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 0px;
 	
 	/* 39% being the ratio we are maintaining 
 	 * calculated by looking at the image 
 	 * ratio: 400/1024 = ~0.39 */
-	padding: 0 0 39% 0;
+	padding: 0 0 56.9% 0;
+	background-color: #f5f5f5;
 }
 
 .skodaSlider {
@@ -40,7 +41,7 @@
 .slideLeft{
 	height: 100px;
     line-height: 100px;
-    margin-top: -50px;
+    margin-top: -75px;
     width: 100px;
 	cursor: pointer;
     display: inline-block;
@@ -54,7 +55,7 @@
 .slideRight{
 	height: 100px;
     line-height: 100px;
-    margin-top: -50px;
+    margin-top: -75px;
     width: 100px;
 	cursor: pointer;
     display: inline-block;
@@ -71,13 +72,24 @@
 	width: 100%;
 	height: 5%;
 }
-
+.container .linkToSlide{
+	
+	min-height: 30px;
+    padding: 30px;
+    right: 30px !important;
+	left:auto !important;
+	top: auto !important;
+    width: 340px;
+	background-color: #4ba82e;
+    color: #fff; 
+	position: absolute !important;
+	bottom: 0 !important;
+}
 .container .selectorsBlock .selectors {
 	position: relative;
-	top: 0;
-	left: 0;
-	margin: 0 auto;
-	width: 12%;
+	top: -2px;
+	left: 30px;
+	width: 30%;
 	height: 100%;
 }
 
@@ -86,14 +98,16 @@
 	top: 0;
 	left: 0;
 	float: left;
-	width: 16%;
-	height: 100%;
-	margin: 0 0 0 5%;
-	background: #aaa;
+	background-image: url("../img/dot.png");
+	background-repeat: no-repeat;
+	background-position: -15px 0px;
+	height: 15px;
+    margin-right: 15px;
+    width: 15px;
 }
 
 .container .selectorsBlock .selectors .selected {
-	background: #333;
+	background-position: 0px 0px;
 }
 
 .container .selectorsBlock .selectors .first {

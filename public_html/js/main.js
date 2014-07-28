@@ -11,11 +11,18 @@ $(document).ready(function() {
 		infiniteSlider: true,
 		responsiveSlides: true
 	});
-
+	
+	$('.linkToSlide').iosSlider({
+		snapToChildren: true,
+		snapSlideCenter: true,
+		infiniteSlider: true
+	});
 });
 
 function slideChange(args) {
-
+	
+	$('.linkToSlide').iosSlider('goToSlide', args.currentSlideNumber);
+	
 	$('.selectors .item').removeClass('selected');
 	$('.selectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
 
