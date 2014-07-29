@@ -10,6 +10,17 @@
 	padding: 0 0 56.9% 0;
 	background-color: #f5f5f5;
 }
+.containerNews {
+	/* defaults for resposive height container */
+	position: relative;
+	width: 100%;
+	height: 0px;
+	
+	/* 39% being the ratio we are maintaining 
+	 * calculated by looking at the image 
+	 * ratio: 400/1024 = ~0.39 */
+	padding: 0 0 25% 0;
+}
 
 .skodaSlider {
 	width: 100%;
@@ -19,13 +30,29 @@
 	 * a very high number */
 	height: 700px;
 }
-
+.newsSlider{
+	width: 100%;
+	height: 700px;
+	border: 1px solid #ccc;
+    color: #555;
+	background-color: #f5f5f5;
+}
 .skodaSlider .slider {
 	width: 100%;
 	height: 100%;
 }
 
 .skodaSlider .slider .item {
+	float: left;
+	
+	width: 100%;
+}
+.newsSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.newsSlider .slider .item {
 	float: left;
 	
 	width: 100%;
@@ -72,18 +99,28 @@
 	width: 100%;
 	height: 5%;
 }
+.containerNews .selectorsBlock {
+	position: absolute;
+	bottom: -25px;
+	width: 100%;
+	height: 5%;
+}
 .container .linkToSlide{
-	
 	min-height: 30px;
-    padding: 30px;
+    padding: 20px 10px 40px;
     right: 30px !important;
 	left:auto !important;
 	top: auto !important;
-    width: 340px;
+	width: 320px;
 	background-color: #4ba82e;
-    color: #fff; 
+    color: #fff;
+	height: 80px;
 	position: absolute !important;
-	bottom: 0 !important;
+	bottom: 0px !important;
+}
+.container .linkToSlide .item{
+	width: 100%;
+	margin-right: 40px;
 }
 .container .selectorsBlock .selectors {
 	position: relative;
@@ -105,12 +142,41 @@
     margin-right: 15px;
     width: 15px;
 }
-
 .container .selectorsBlock .selectors .selected {
 	background-position: 0px 0px;
 }
-
 .container .selectorsBlock .selectors .first {
+	margin-left: 0;
+}
+
+
+.containerNews .selectorsBlock .selectorsNews {
+	position: relative;
+	top: -2px;
+	left: 30px;
+	width: 30%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.containerNews .selectorsBlock .selectorsNews .item {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	background-image: url("../img/dot.png");
+	background-repeat: no-repeat;
+	background-position: -15px 0px;
+	height: 15px;
+    margin-right: 15px;
+    width: 15px;
+}
+
+.containerNews .selectorsBlock .selectorsNews .selected {
+	background-position: 0px 0px;
+}
+
+.containerNews .selectorsBlock .selectorsNews .first {
 	margin-left: 0;
 }
 .slideLeft span{
@@ -128,4 +194,28 @@
 	background: url("../img/icons_arrows.png") no-repeat scroll -110px 0 transparent;
 	display: inline-block;
     vertical-align: middle;
+}
+span.topArrow{
+	background: url("../img/icons_arrows.png") no-repeat scroll -75px -78px transparent;
+	height: 25px;
+    right: 60px;
+    bottom: 60px;
+    width: 30px;
+	display: inline-block;
+    position: absolute;
+}
+.linkToSlide .slider .item a{
+	color: #FFF;
+	padding-left: 38px;
+}
+.linkToSlide .slider .item a:hover{
+	color: #FFF;
+}
+.linkToSlide .slider .item a span{
+	height: 23px;
+    margin: 0 15px 0 -38px;
+    width: 23px;
+	background: url("../img/icons_arrows.png") no-repeat scroll -86px 0 transparent;
+	display: inline-block;
+    vertical-align: top;
 }
