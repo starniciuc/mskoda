@@ -183,7 +183,8 @@ header ul.hMenu li.list-menu.open a.btn-list-menu span
 	display: inline-block;
 	vertical-align: middle;
 }
-.visit ul li a span.arrow{
+.visit ul li a span.arrow,
+.linkAllNews a span.arrow{
 	height: 25px;
     margin: -12px 0 0 15px;
     width: 15px;
@@ -211,4 +212,33 @@ header ul.hMenu li.list-menu.open a.btn-list-menu span
     vertical-align: middle;
 	right: 0;
     top: 50%;
+}
+span.icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	margin: 0 20px 0 0;
+}
+span.icon.models{
+	background-image: url("../img/60/models.png");
+}
+span.icon.experience{
+	background-image: url("../img/60/experience.png");
+}
+span.icon.service{
+	background-image: url("../img/60/service.png");
+}
+.linkAllNews{
+	padding: 0 15px;
+	text-align: right;
+    width: 100%;
+}
+.linkAllNews a{
+	color: #4ba82e;
+	display: inline-block;
+}
+.linkAllNews a:hover{
+	color: #4ba82e;
 }
