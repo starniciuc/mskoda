@@ -3,7 +3,7 @@
 	position: relative;
 	width: 100%;
 	height: 0px;
-	
+
 	/* 39% being the ratio we are maintaining 
 	 * calculated by looking at the image 
 	 * ratio: 400/1024 = ~0.39 */
@@ -15,16 +15,16 @@
 	position: relative;
 	width: 100%;
 	height: 0px;
-	
+
 	/* 39% being the ratio we are maintaining 
 	 * calculated by looking at the image 
 	 * ratio: 400/1024 = ~0.39 */
-	padding: 0 0 39% 0;
+	padding: 0 0 29% 0;
 }
 
 .skodaSlider {
 	width: 100%;
-	
+
 	/* this height ends up being your maximum height, 
 	 * if you want it to scale forever, set it to 
 	 * a very high number */
@@ -44,7 +44,7 @@
 
 .skodaSlider .slider .item {
 	float: left;
-	
+
 	width: 100%;
 }
 .newsSlider .slider {
@@ -59,9 +59,27 @@
 	padding: 30px;
 }
 .newsSlider .slider .item h4{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #555;
+	padding-bottom: 20px;
+}
+.newsSlider .slider .item p{
+    font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.newsSlider .slider .item a{
+    font-size: 16px;
+	color: #4ba82e;
+}
+.newsSlider .slider .item a span{
+    display: inline-block;
+    vertical-align: middle;
+	height: 22px;
+    margin-right: 15px;
+    width: 22px;
+	background: url("../img/icons_arrows.png") no-repeat scroll -348px 0 transparent;
 }
 
 .skodaSlider .slider .item img {
@@ -224,4 +242,71 @@ span.topArrow{
 	background: url("../img/icons_arrows.png") no-repeat scroll -86px 0 transparent;
 	display: inline-block;
     vertical-align: top;
+}
+@media (max-width: 640px){
+	.slideLeft span{
+		height: 38px;
+		width: 21px;
+		background-position: -210px 0;
+	}
+	.slideLeft{
+		height: 75px;
+		line-height: 75px;
+		width: 75px;
+	}
+	.slideRight span{
+		height: 38px;
+		width: 21px;
+		background-position: -188px 0;
+	}
+	.slideRight{
+		height: 75px;
+		line-height: 75px;
+		width: 75px;
+	}
+	.container .selectorsBlock .selectors .item{
+		height: 14px;
+		width: 12px;
+		background-position: -12px 0;
+		background-image: url("../img/45/dot.png");
+		margin-right: 15px;
+	}
+	.container .selectorsBlock .selectors .selected{
+		background-position: 0 0;
+	}
+	.container .selectorsBlock .selectors{
+		left: 20px;
+	}
+	.container .linkToSlide{
+		right: 20px !important;
+	}
+	.linkToSlide .slider .item a span{
+		height: 17px;
+		margin: 3px 15px 0 -30px;
+		width: 17px;
+		background-position: -169px 0;
+	}
+	.newsSlider .slider .item{
+		padding: 20px;
+		padding-top: 10px; 
+	}
+	.newsSlider .slider .item h4{
+		padding-bottom: 10px;
+	}
+	.newsSlider .slider .item a span{
+		background-position: -348px -22px;
+		height: 17px;
+		margin: -2px 10px 0 0;
+		width: 17px;
+	}
+	.containerNews .selectorsBlock .selectorsNews .item{
+		height: 14px;
+		width: 12px;
+		background-position: -12px 0;
+		background-image: url("../img/45/dot.png");
+		margin-right: 15px;
+	}
+	.containerNews .selectorsBlock .selectorsNews .selected{
+		background-position: 0 0;
+	}
 }
