@@ -11,7 +11,7 @@ $(document).ready(function() {
 		infiniteSlider: true,
 		responsiveSlides: true
 	});
-	
+
 	$('.newsSlider').iosSlider({
 		snapToChildren: true,
 		desktopClickDrag: true,
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		infiniteSlider: true,
 		responsiveSlides: true
 	});
-	
+
 	$('.linkToSlide').iosSlider({
 		snapToChildren: true,
 		snapSlideCenter: true,
@@ -29,17 +29,49 @@ $(document).ready(function() {
 	});
 });
 
+
 function slideChange(args) {
-	
+
 	$('.linkToSlide').iosSlider('goToSlide', args.currentSlideNumber);
-	
+
 	$('.selectors .item').removeClass('selected');
 	$('.selectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
 
 }
 function slideChangeNews(args) {
-	
+
 	$('.selectorsNews .item').removeClass('selected');
 	$('.selectorsNews .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
 
 }
+$(".changeCollapse").click(function() {
+	var mybtn = $(this);
+	var par = mybtn.parents("li").children(".collapse");
+	mybtn.parents("li").toggleClass("open-collaps");
+	par.collapse("show");
+	par.on('shown.bs.collapse', function() {
+		mybtn.click(function() {
+			par.collapse('hide');
+		});
+	});
+	par.on("hidden.bs.collapse", function() {
+
+	});
+});
+$(".hide-collapse").click(function() {
+	var mybtn = $(this);
+	var par = mybtn.parents(".collapse");
+	par.collapse("hide");
+	mybtn.parents("li").toggleClass("open-collaps");
+});
+$(function () {
+
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        manualControls: '#slider3-pager',
+        speed: 1
+      });
+
+    });

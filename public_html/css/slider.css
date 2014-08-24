@@ -19,7 +19,7 @@
 	/* 39% being the ratio we are maintaining 
 	 * calculated by looking at the image 
 	 * ratio: 400/1024 = ~0.39 */
-	padding: 0 0 29% 0;
+	padding: 0 0 35% 0;
 }
 
 .skodaSlider {
@@ -280,6 +280,9 @@ span.topArrow{
 	.container .linkToSlide{
 		right: 20px !important;
 	}
+	.containerNews {
+		padding-bottom: 42%;
+	}
 	.linkToSlide .slider .item a span{
 		height: 17px;
 		margin: 3px 15px 0 -30px;
@@ -308,5 +311,103 @@ span.topArrow{
 	}
 	.containerNews .selectorsBlock .selectorsNews .selected{
 		background-position: 0 0;
+	}
+}
+@media (max-width: 480px){
+	.slideLeft span{
+		height: 25px;
+		width: 14px;
+		background: url("../img/30/icons_arrows.png") no-repeat scroll -260px 0 transparent;
+	}
+	.slideLeft{
+		height: 50px;
+		line-height: 50px;
+		width: 50px;
+	}
+	.slideRight span{
+		height: 25px;
+		width: 14px;
+		background: url("../img/30/icons_arrows.png") no-repeat scroll -245px 0 transparent;
+	}
+	.slideRight{
+		height: 50px;
+		line-height: 50px;
+		width: 50px;
+	}
+	.container .linkToSlide{
+		width: 200px;
+		padding-top: 5px;
+		bottom: 15px;
+	}
+	.linkToSlide .slider .item{
+		width: 170px !important;
+		margin-right: 50px;
+		padding-right: 20px;
+	}
+	.linkToSlide .slider .item a{
+		padding-left: 22px;
+	}
+	span.topArrow{
+		bottom: 45px;
+	}
+	.container .selectorsBlock .selectors .item{
+		height: 9px;
+		margin-right: 5px;
+		width: 9px;
+		background: url("../img/30/dot.png") no-repeat scroll -9px 0 transparent;
+	}
+	.container .selectorsBlock .selectors .selected{
+		background-position: 0 0;
+	}
+	.container .selectorsBlock .selectors{
+		left: 20px;
+	}
+	.container .linkToSlide{
+		right: 20px !important;
+	}
+	.linkToSlide .slider .item a span{
+		height: 11px;
+		margin: 5px 10px 0 -21px;
+		width: 11px;
+		background: url("../img/30/icons_arrows.png") no-repeat scroll -233px 0 transparent;
+	}
+	.newsSlider .slider .item{
+		padding: 15px;
+		padding-top: 5px; 
+	}
+	.newsSlider .slider .item h4{
+		padding-bottom: 0px;
+		font-size: 15px;
+	}
+	.newsSlider .slider .item p{
+		font-size: 14px;
+		padding-bottom: 0;
+		margin-bottom: 8px;
+	}
+	.containerNews {
+		padding-bottom: 38%;
+	}
+	.newsSlider .slider .item a{
+		font-size: 14px;
+	}
+	.newsSlider .slider .item a span{
+		background: url("../img/icons_arrows.png") no-repeat scroll -348px -38px transparent;
+		height: 12px;
+		margin: -1px 5px 0 0;
+		width: 11px;
+	}
+	.containerNews .selectorsBlock .selectorsNews .item{
+		height: 9px;
+		margin-right: 5px;
+		width: 9px;
+		background: url("../img/30/dot.png") no-repeat scroll -9px 0 transparent;
+	}
+	.containerNews .selectorsBlock .selectorsNews .selected{
+		background-position: 0 0;
+	}
+}
+@media (max-width: 410px){
+	.containerNews {
+		padding-bottom: 68%;
 	}
 }
