@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/slider.css">
-        <link rel="stylesheet" href="css/responsiveslides.css">
 
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -89,23 +88,22 @@
                                 <ul class="model-details">
                                     <li>
                                         <a href="javascript:void(0)" class="changeCollapse">Exterior<span class="open"></span></a>
-                                        <div class="collapse">
-                                            <ul class="rslides" id="slider2">
-                                                <li><img src="img/models/citigo/exterior/green.jpg" alt=""></li>
-                                                <li><img src="img/models/citigo/exterior/black.jpg" alt=""></li>
-                                                <li><img src="img/models/citigo/exterior/yellow.jpg" alt=""></li>
-                                                <li><img src="img/models/citigo/exterior/red.jpg" alt=""></li>
-                                                <li><img src="img/models/citigo/exterior/arg.jpg" alt=""></li>
-                                                <li><img src="img/models/citigo/exterior/white.jpg" alt=""></li>
+                                        <div class="collapse" id="sliderColor">
+                                            <div id="slider2">
+                                                <img src="img/models/citigo/exterior/green.jpg" alt="" id="imageSlide">
+                                            </div>
+                                            <ul id="slider3-pager" class="modelColorSlider">
+                                                <li><a href="javascript:void(0)" class="green" data-img="img/models/citigo/exterior/green.jpg"></a></li>
+                                                <li><a href="javascript:void(0)" class="black" data-img="img/models/citigo/exterior/black.jpg"></a></li>
+                                                <li><a href="javascript:void(0)" class="yellow" data-img="img/models/citigo/exterior/yellow.jpg"></a></li>
+                                                <li><a href="javascript:void(0)" class="red" data-img="img/models/citigo/exterior/red.jpg"></a></li>
+                                                <li><a href="javascript:void(0)" class="arg" data-img="img/models/citigo/exterior/arg.jpg"></a></li>
+                                                <li><a href="javascript:void(0)" class="white" data-img="img/models/citigo/exterior/white.jpg"></a></li>
                                             </ul>
-                                            <ul id="slider3-pager">
-                                                <li class="green"><a href="javascript:void(0)"></a></li>
-                                                <li class="black"><a href="javascript:void(0)"></a></li>
-                                                <li class="yellow"><a href="javascript:void(0)"></a></li>
-                                                <li class="red"><a href="javascript:void(0)"></a></li>
-                                                <li class="arg"><a href="javascript:void(0)"></a></li>
-                                                <li class="white"><a href="javascript:void(0)"></a></li>
-                                            </ul>
+                                            <div class="outside">
+                                                <div id="slider-prev-top" class="callbacks_nav"></div>
+                                                <div id="slider-next-top" class="callbacks_nav next"></div>
+                                            </div>
                                             <a title="" class="hide-collapse" href="javascript:void(0)"><span></span>Hide&nbsp;Exterior</a>
                                         </div>
                                     </li>
@@ -219,13 +217,13 @@
                                             <div class="galleryBlock">
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-01.jpg" alt="citigo"></a>
+                                                        <a href="javascript:slideModal(0);"><img src="img/gallery/citigo/citigo-01.jpg" alt="citigo"></a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-02.jpg" alt="citigo"></a>
+                                                        <a href="javascript:slideModal(1);"><img src="img/gallery/citigo/citigo-02.jpg" alt="citigo"></a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-03.jpg" alt="citigo"></a>
+                                                        <a href="javascript:slideModal(2);"><img src="img/gallery/citigo/citigo-03.jpg" alt="citigo"></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -276,10 +274,10 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade skodaModal" id="sliderModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-            <a id="closeButton" data-dismiss="modal" aria-hidden="true"><span></span></a>
+        <div class="modal skodaModal" id="sliderModal">
             <div class="sliderModal">
-                <ul class="rslides" id="slider3">
+                <a id="closeButton" data-dismiss="modal" aria-hidden="true"><span></span></a>
+                <ul class="bxslider">
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-01.jpg" alt="citigo"><span></span></li>
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-02.jpg" alt="citigo"><span></span></li>
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-03.jpg" alt="citigo"><span></span></li>
@@ -289,6 +287,10 @@
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-07.jpg" alt="citigo"><span></span></li>
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-08.jpg" alt="citigo"><span></span></li>
                 </ul>
+                <div class="outside">
+                    <div id="slider-prev" class="callbacks_nav"></div>
+                    <div id="slider-next" class="callbacks_nav next"></div>
+                </div>
             </div><!-- /.modal-content -->
         </div>
         <!-- /container -->
@@ -297,7 +299,7 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery.iosslider.js" type="text/javascript"></script>
-        <script src="js/responsiveslides.min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
 
         <script src="js/main.js"></script>
     </body>

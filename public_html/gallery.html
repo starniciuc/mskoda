@@ -15,8 +15,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/slider.css">
-        <link rel="stylesheet" href="css/responsiveslides.css">
-        
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -84,28 +83,28 @@
                                 <div class="galleryBlock galleryPage">
                                     <ul>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-01.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(0);"><img src="img/gallery/citigo/citigo-01.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-02.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(1);"><img src="img/gallery/citigo/citigo-02.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-03.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(2);"><img src="img/gallery/citigo/citigo-03.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-04.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(3);"><img src="img/gallery/citigo/citigo-04.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-05.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(4);"><img src="img/gallery/citigo/citigo-05.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-06.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(5);"><img src="img/gallery/citigo/citigo-06.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-07.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(6);"><img src="img/gallery/citigo/citigo-07.jpg" alt="citigo"></a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void();" data-toggle="modal" data-target="#sliderModal"><img src="img/gallery/citigo/citigo-08.jpg" alt="citigo"></a>
+                                            <a href="javascript:slideModal(7);"><img src="img/gallery/citigo/citigo-08.jpg" alt="citigo"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -151,10 +150,10 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade skodaModal" id="sliderModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal skodaModal" id="sliderModal">
             <div class="sliderModal">
                 <a id="closeButton" data-dismiss="modal" aria-hidden="true"><span></span></a>
-                <ul class="rslides" id="slider3">
+                <ul class="bxslider">
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-01.jpg" alt="citigo"><span></span></li>
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-02.jpg" alt="citigo"><span></span></li>
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-03.jpg" alt="citigo"><span></span></li>
@@ -164,6 +163,10 @@
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-07.jpg" alt="citigo"><span></span></li>
                     <li data-dismiss="modal" aria-hidden="true"><img src="img/gallery/citigo/citigo-08.jpg" alt="citigo"><span></span></li>
                 </ul>
+                <div class="outside">
+                    <div id="slider-prev" class="callbacks_nav"></div>
+                    <div id="slider-next" class="callbacks_nav next"></div>
+                </div>
             </div><!-- /.modal-content -->
         </div>       
         <!-- /container -->
@@ -172,8 +175,8 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery.iosslider.js"></script>
-        <script src="js/responsiveslides.min.js"></script>
-        
+        <script src="js/jquery.bxslider.js"></script>
+
         <script src="js/main.js"></script>
     </body>
 </html>
