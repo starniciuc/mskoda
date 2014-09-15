@@ -64,30 +64,36 @@ $(".hide-collapse").click(function() {
     par.collapse("hide");
     mybtn.parents("li").toggleClass("open-collaps");
 });
-var mSlide = $('body').hasClass('.bxslider')?$('.bxslider').bxSlider({
+var mSlide = " ";
+if ($('#sliderModal').length > 0) {
+    mSlide = $('.bxslider').bxSlider({
         nextSelector: '#slider-next',
         prevSelector: '#slider-prev',
         pager: false,
         adaptiveHeight: true,
         oneToOneTouch: true
-    }):"";
+    });
+}
 $('#sliderModal').on('shown.bs.modal', function() {
     mSlide.reloadSlider();
 });
-var slide = $('body').hasClass('.modelColorSlider')?$('#slider3-pager').bxSlider({
-    nextSelector: '#slider-next-top',
-    prevSelector: '#slider-prev-top',
-    pager: false,
-    minSlides: 6,
-    maxSlides: 6,
-    slideMargin: 10,
-    slideWidth: 75,
-    adaptiveHeight: true,
-    infiniteLoop: false
-}):"";
+var slide = " ";
+if ($('#sliderModal').length > 0) {
+    slide = $('#slider3-pager').bxSlider({
+        nextSelector: '#slider-next-top',
+        prevSelector: '#slider-prev-top',
+        pager: false,
+        minSlides: 6,
+        maxSlides: 6,
+        slideMargin: 10,
+        slideWidth: 75,
+        adaptiveHeight: true,
+        infiniteLoop: false
+    });
+}
 
 if ($("#slider3-pager li").length <= 6) {
-    
+
     $("#slider-next-top").hide();
     $("#slider-prev-top").hide();
 }
@@ -100,7 +106,7 @@ $("#slider3-pager li a").click(function() {
     $("#imageSlide").attr("src", img);
 });
 
-function slideModal(a){
+function slideModal(a) {
     $("#sliderModal").modal("show");
     mSlide.goToSlide(a);
 }
