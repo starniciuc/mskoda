@@ -1,0 +1,413 @@
+.container {
+	/* defaults for resposive height container */
+	position: relative;
+	width: 100%;
+	height: 0px;
+
+	/* 39% being the ratio we are maintaining 
+	 * calculated by looking at the image 
+	 * ratio: 400/1024 = ~0.39 */
+	padding: 0 0 56.9% 0;
+	background-color: #f5f5f5;
+}
+.containerNews {
+	/* defaults for resposive height container */
+	position: relative;
+	width: 100%;
+	height: 0px;
+
+	/* 39% being the ratio we are maintaining 
+	 * calculated by looking at the image 
+	 * ratio: 400/1024 = ~0.39 */
+	padding: 0 0 35% 0;
+}
+
+.skodaSlider {
+	width: 100%;
+
+	/* this height ends up being your maximum height, 
+	 * if you want it to scale forever, set it to 
+	 * a very high number */
+	height: 700px;
+}
+.newsSlider{
+	width: 100%;
+	height: 700px;
+	border: 1px solid #ccc;
+    color: #555;
+	background-color: #f5f5f5;
+}
+.skodaSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.skodaSlider .slider .item {
+	float: left;
+
+	width: 100%;
+}
+.newsSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.newsSlider .slider .item {
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+}
+.newsSlider .slider .item h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+	padding-bottom: 20px;
+}
+.newsSlider .slider .item p{
+    font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.newsSlider .slider .item a{
+    font-size: 16px;
+	color: #4ba82e;
+}
+.newsSlider .slider .item a span{
+    display: inline-block;
+    vertical-align: middle;
+	height: 22px;
+    margin-right: 15px;
+    width: 22px;
+	background: url("../img/icons_arrows.png") no-repeat scroll -348px 0 transparent;
+}
+
+.skodaSlider .slider .item img {
+	width: 100%;
+	height: auto;
+}
+
+/* controls */
+
+.slideLeft{
+	height: 100px;
+    line-height: 100px;
+    margin-top: -75px;
+    width: 100px;
+	cursor: pointer;
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    vertical-align: middle;
+}
+
+.slideRight{
+	height: 100px;
+    line-height: 100px;
+    margin-top: -75px;
+    width: 100px;
+	cursor: pointer;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    vertical-align: middle;
+}
+
+.container .selectorsBlock {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 5%;
+}
+.containerNews .selectorsBlock {
+	position: absolute;
+	bottom: -25px;
+	width: 100%;
+	height: 5%;
+}
+.container .linkToSlide{
+	min-height: 30px;
+    padding: 20px 10px 40px;
+    right: 30px !important;
+	left:auto !important;
+	top: auto !important;
+	width: 320px;
+	background-color: #4ba82e;
+    color: #fff;
+	height: 80px;
+	position: absolute !important;
+	bottom: 0px !important;
+}
+.container .linkToSlide .item{
+	width: 100%;
+	margin-right: 40px;
+}
+.container .selectorsBlock .selectors {
+	position: relative;
+	top: -2px;
+	left: 30px;
+	width: 30%;
+	height: 100%;
+}
+
+.container .selectorsBlock .selectors .item {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	background-image: url("../img/dot.png");
+	background-repeat: no-repeat;
+	background-position: -15px 0px;
+	height: 15px;
+    margin-right: 15px;
+    width: 15px;
+}
+.container .selectorsBlock .selectors .selected {
+	background-position: 0px 0px;
+}
+.container .selectorsBlock .selectors .first {
+	margin-left: 0;
+}
+
+
+.containerNews .selectorsBlock .selectorsNews {
+	position: relative;
+	top: -2px;
+	left: 30px;
+	width: 30%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.containerNews .selectorsBlock .selectorsNews .item {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	background-image: url("../img/dot.png");
+	background-repeat: no-repeat;
+	background-position: -15px 0px;
+	height: 15px;
+    margin-right: 15px;
+    width: 15px;
+}
+
+.containerNews .selectorsBlock .selectorsNews .selected {
+	background-position: 0px 0px;
+}
+
+.containerNews .selectorsBlock .selectorsNews .first {
+	margin-left: 0;
+}
+.slideLeft span{
+	display: block;
+	height: 50px;
+    width: 28px;
+	background: url("../img/icons_arrows.png") no-repeat scroll -140px 0 transparent;
+	display: inline-block;
+    vertical-align: middle;
+}
+.slideRight span{
+	display: block;
+	height: 50px;
+    width: 28px;
+	background: url("../img/icons_arrows.png") no-repeat scroll -110px 0 transparent;
+	display: inline-block;
+    vertical-align: middle;
+}
+span.topArrow{
+	background: url("../img/icons_arrows.png") no-repeat scroll -75px -78px transparent;
+	height: 25px;
+    right: 60px;
+    bottom: 60px;
+    width: 30px;
+	display: inline-block;
+    position: absolute;
+}
+.linkToSlide .slider .item a{
+	color: #FFF;
+	padding-left: 38px;
+}
+.linkToSlide .slider .item a:hover{
+	color: #FFF;
+}
+.linkToSlide .slider .item a span{
+	height: 23px;
+    margin: 0 15px 0 -38px;
+    width: 23px;
+	background: url("../img/icons_arrows.png") no-repeat scroll -86px 0 transparent;
+	display: inline-block;
+    vertical-align: top;
+}
+@media (max-width: 640px){
+	.slideLeft span{
+		height: 38px;
+		width: 21px;
+		background-position: -210px 0;
+	}
+	.slideLeft{
+		height: 75px;
+		line-height: 75px;
+		width: 75px;
+	}
+	.slideRight span{
+		height: 38px;
+		width: 21px;
+		background-position: -188px 0;
+	}
+	.slideRight{
+		height: 75px;
+		line-height: 75px;
+		width: 75px;
+	}
+	.container .selectorsBlock .selectors .item{
+		height: 14px;
+		width: 12px;
+		background-position: -12px 0;
+		background-image: url("../img/45/dot.png");
+		margin-right: 15px;
+	}
+	.container .selectorsBlock .selectors .selected{
+		background-position: 0 0;
+	}
+	.container .selectorsBlock .selectors{
+		left: 20px;
+	}
+	.container .linkToSlide{
+		right: 20px !important;
+	}
+	.containerNews {
+		padding-bottom: 42%;
+	}
+	.linkToSlide .slider .item a span{
+		height: 17px;
+		margin: 3px 15px 0 -30px;
+		width: 17px;
+		background-position: -169px 0;
+	}
+	.newsSlider .slider .item{
+		padding: 20px;
+		padding-top: 10px; 
+	}
+	.newsSlider .slider .item h4{
+		padding-bottom: 10px;
+	}
+	.newsSlider .slider .item a span{
+		background-position: -348px -22px;
+		height: 17px;
+		margin: -2px 10px 0 0;
+		width: 17px;
+	}
+	.containerNews .selectorsBlock .selectorsNews .item{
+		height: 14px;
+		width: 12px;
+		background-position: -12px 0;
+		background-image: url("../img/45/dot.png");
+		margin-right: 15px;
+	}
+	.containerNews .selectorsBlock .selectorsNews .selected{
+		background-position: 0 0;
+	}
+}
+@media (max-width: 480px){
+	.slideLeft span{
+		height: 25px;
+		width: 14px;
+		background: url("../img/30/icons_arrows.png") no-repeat scroll -260px 0 transparent;
+	}
+	.slideLeft{
+		height: 50px;
+		line-height: 50px;
+		width: 50px;
+	}
+	.slideRight span{
+		height: 25px;
+		width: 14px;
+		background: url("../img/30/icons_arrows.png") no-repeat scroll -245px 0 transparent;
+	}
+	.slideRight{
+		height: 50px;
+		line-height: 50px;
+		width: 50px;
+	}
+	.container .linkToSlide{
+		width: 200px;
+		padding-top: 5px;
+		bottom: 15px;
+	}
+	.linkToSlide .slider .item{
+		width: 170px !important;
+		margin-right: 50px;
+		padding-right: 20px;
+	}
+	.linkToSlide .slider .item a{
+		padding-left: 22px;
+	}
+	span.topArrow{
+		bottom: 45px;
+	}
+	.container .selectorsBlock .selectors .item{
+		height: 9px;
+		margin-right: 5px;
+		width: 9px;
+		background: url("../img/30/dot.png") no-repeat scroll -9px 0 transparent;
+	}
+	.container .selectorsBlock .selectors .selected{
+		background-position: 0 0;
+	}
+	.container .selectorsBlock .selectors{
+		left: 20px;
+	}
+	.container .linkToSlide{
+		right: 20px !important;
+	}
+	.linkToSlide .slider .item a span{
+		height: 11px;
+		margin: 5px 10px 0 -21px;
+		width: 11px;
+		background: url("../img/30/icons_arrows.png") no-repeat scroll -233px 0 transparent;
+	}
+	.newsSlider .slider .item{
+		padding: 15px;
+		padding-top: 5px; 
+	}
+	.newsSlider .slider .item h4{
+		padding-bottom: 0px;
+		font-size: 15px;
+	}
+	.newsSlider .slider .item p{
+		font-size: 14px;
+		padding-bottom: 0;
+		margin-bottom: 8px;
+	}
+	.containerNews {
+		padding-bottom: 38%;
+	}
+	.newsSlider .slider .item a{
+		font-size: 14px;
+	}
+	.newsSlider .slider .item a span{
+		background: url("../img/icons_arrows.png") no-repeat scroll -348px -38px transparent;
+		height: 12px;
+		margin: -1px 5px 0 0;
+		width: 11px;
+	}
+	.containerNews .selectorsBlock .selectorsNews .item{
+		height: 9px;
+		margin-right: 5px;
+		width: 9px;
+		background: url("../img/30/dot.png") no-repeat scroll -9px 0 transparent;
+	}
+	.containerNews .selectorsBlock .selectorsNews .selected{
+		background-position: 0 0;
+	}
+}
+@media (max-width: 410px){
+	.containerNews {
+		padding-bottom: 68%;
+	}
+}
